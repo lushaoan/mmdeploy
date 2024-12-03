@@ -9,6 +9,12 @@ import mmengine
 import torch.multiprocessing as mp
 from torch.multiprocessing import Process, set_start_method
 
+import sys
+sys.path.append('/dataset/shaoanlu/github/mmlab/mmdeploy')
+sys.path.append('/dataset/shaoanlu/github/mmlab/mmdetection')
+sys.path.append('/dataset/shaoanlu/github/mmlab/mmyolo')
+sys.path.append('/dataset/shaoanlu/github/mmlab/mmpose')
+
 from mmdeploy.apis import (create_calib_input_data, extract_model,
                            get_predefined_partition_cfg, torch2onnx,
                            torch2torchscript, visualize_model)

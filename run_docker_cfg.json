@@ -1,0 +1,7 @@
+{
+    "name": "mmdep",
+    "image": "harbor.smoa.cc/lushaoan/mmlab:v1",
+    "gpu": 1,
+    "command": "cd /dataset/shaoanlu/github/mmlab/mmdeploy/ && bash run_deploy.sh",
+    "arch": "ampere"
+}
